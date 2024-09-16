@@ -1,9 +1,3 @@
-Course Management System Application
-Notes before Reading:
-1. All details about the project is below
-2. whats left to work on is to update the frontend and enhance it 
-
-
 ```markdown
 # Course & Student Management Application
 
