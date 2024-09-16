@@ -1,4 +1,4 @@
-```markdown
+
 # Course & Student Management Application
 
 This is a simple backend application designed to manage Courses and Students. It includes RESTful API endpoints for CRUD (Create, Read, Update, Delete) operations on both entities. The application is built using **Spring Boot**, **Java**, and **Spring Data JPA** for interacting with a relational database.
