@@ -1,0 +1,27 @@
+The file linked above contains the SQL table creation commands, and the data to be inserted into the tables. You should be able to quickly create the database, then create the tables from the file and enter the data. The database for this assignment contains data that supports a simple order processing application for a small distribution company. It consists of five tables:
+
+- Show the name, sales, and quota of Bill Adams.
+- List the company names and the product description of all the products each has ordered. Arrange descending by company.
+- Show the total value of the inventory on hand for each product. Arrange in descending order by total value.
+- How many customers are there?
+- List the offices with a target over $600,000.
+- What is the average of all the salespeople?
+- List orders over $25,000, including the name of the salesperson who took the order and the name of the customer who placed it.
+- How many sales offices have salespeople who are over quota?
+- Show the name, sales, and office for each salesperson. Order by increasing sales.
+- List all the companies who have ordered any size widget, and the widget they ordered.
+- List the city, region, and amount that sales are over/under target for each office.
+- What is the total number of each part that has been ordered?
+- List the salespeople, the city they work in, and the manager of the office in which they work.
+- List all orders showing order number, amount, customer name, and the customer's credit limit where the order was greater than $20,000.
+- Are there any customers who are over their credit limit? If so, list the customer, the total amount the customer has on order, and the credit limit.
+- List the salespeople with a higher quota than their manager.
+- List salespeople who work in different offices than their managers, show the name and office where each work.
+- What is the total order size for each salesperson? Order by increasing sales.
+- List all the customers whose sales representative is a manager. Arrange increasing by company.
+- What is the total order size for each salesperson whose orders total more than $30,000?
+- List the offices where the sales target for the office exceeds the sum of the individual salespeople's quotas.
+- List the salespeople whose quotas are equal to or higher than the target of the Atlanta sales office.
+- List the salespeople who do not work in offices managed by Larry Fitch (employee 108).
+- List the products for which an order of $25,000 or more has been received.
+- List the companies who placed an order with a sales rep that is not the sales rep that usually calls on them. Include the names of the sales reps, indicating by attribute name who took the order.

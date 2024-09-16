@@ -1,0 +1,48 @@
+-- Create Collection: 
+db.createCollection("games")
+
+-- Add 5 games to the database: 
+db.games.insertMany([
+    {name: "Super Mario", genre: "Adventure", rating: 90},
+    {name: "Fifa 2022", genre: "Sport", rating: 80},
+    {name: "Inside Out", genre: "Scary", rating: 100},
+    {name: "Pac-Man", genre: "Thriller", rating: 97},
+    {name: "Crazy Taxi", genre: "Cars", rating: 40}
+])
+
+-- retrun all Games:
+db.games.find()
+
+-- find one of your games by name without using limit(): 
+db.games.find({name:"Crazy Taxi"})
+
+-- Write a query that returns the 3 highest rated games:
+db.games.find().sort({rating:-1}).limit(3)
+
+-- update (Method 1): 
+db.games.updateOne(
+    {name: "Super Mario"},
+    {$set: {achievements: ["Game Master","Speed Demon"]}}
+    )
+db.games.updateOne(
+    {name: "Pac-Man"},
+    {$set: {achievements: ["Game Master","Speed Demon"]}}
+    )
+
+-- Update (Method 2): 
+db.games.updateOne(
+  {name: "Super Mario" },
+  {$push: { achievements: { $each: ["Game Master", "Speed Demon"]}}}
+)
+
+db.games.updateOne(
+  {name: "Pac-Man"},
+  {$push: { achievements: { $each: ["Game Master", "Speed Demon"]}}}
+)
+
+-- query to return games with achievement game Master, speed Demon
+db.games.find({ achievements: { $all: ["Game Master", "Speed Demon"] } })
+
+
+-- return only games with achievements: 
+db.games.find({ achievements: { $exists: true } })
